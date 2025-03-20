@@ -167,11 +167,9 @@ You should be able to see the app on `http://localhost:5173/` and the API docume
 
 There's more information about how to run the [API](./apps/api/README.md) and [UI](./apps/web/README.md) in their respective directories.
 
-## Tech Stack
+## Packages Included in this Repo
 
 ### UI
-
-The following packages are included in the UI:
 
 - React
 - [MUI](https://mui.com/)
