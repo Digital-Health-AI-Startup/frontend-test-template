@@ -8,19 +8,13 @@ import {
   Param,
   Query,
 } from '@nestjs/common';
-import {
-  ApiOperation,
-  ApiResponse,
-  ApiTags,
-  ApiParam,
-  ApiQuery,
-} from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags, ApiParam } from '@nestjs/swagger';
 import { DiscoveryService } from './discovery.service';
 import { Discovery } from './entities/discovery.entity';
 import { CreateDiscoveryDto } from './dto/create-discovery.dto';
 import { UpdateDiscoveryDto } from './dto/update-discovery.dto';
 import { PaginatedDiscoveriesDto } from './dto/paginated-discoveries.dto';
-import { DiscoveryStatusOption } from './enums/discovery-status.enum';
+import { DiscoveryQueryDto } from './dto/discovery-query.dto';
 
 @ApiTags('discoveries')
 @Controller('discoveries')
@@ -28,25 +22,6 @@ export class DiscoveryController {
   constructor(private readonly discoveryService: DiscoveryService) {}
 
   @Get()
-  @ApiQuery({
-    name: 'page',
-    required: false,
-    type: Number,
-    description: 'Page number. Default is 1.',
-  })
-  @ApiQuery({
-    name: 'limit',
-    required: false,
-    type: Number,
-    description:
-      'Limit number of discoveries per page. Default will return all discoveries.',
-  })
-  @ApiQuery({
-    name: 'status',
-    required: false,
-    type: String,
-    description: 'Status filter. Default will return all discoveries.',
-  })
   @ApiOperation({
     summary: 'Get all discoveries with pagination and optional status filter',
   })
@@ -56,12 +31,12 @@ export class DiscoveryController {
       'Returns paginated discoveries and optionally filtered by status',
     type: PaginatedDiscoveriesDto,
   })
-  findAll(
-    @Query('page') page?: number,
-    @Query('limit') limit?: number,
-    @Query('status') status?: DiscoveryStatusOption,
-  ): PaginatedDiscoveriesDto {
-    return this.discoveryService.findAllPaginated(page, limit, status);
+  findAll(@Query() query: DiscoveryQueryDto): PaginatedDiscoveriesDto {
+    return this.discoveryService.findAllPaginated(
+      query.page,
+      query.limit,
+      query.status,
+    );
   }
 
   @Get(':id')

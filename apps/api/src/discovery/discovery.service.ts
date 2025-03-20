@@ -25,15 +25,21 @@ export class DiscoveryService {
 
   findAllPaginated(
     page: number = 1,
-    limit: number = 10,
+    limit?: number,
     status?: DiscoveryStatusOption,
   ): PaginatedDiscoveriesDto {
     let filteredDiscoveries = [...this.discoveries];
-
     if (status) {
       filteredDiscoveries = filteredDiscoveries.filter(
         (discovery) => discovery.status === status,
       );
+    }
+    if (!limit) {
+      return {
+        total: filteredDiscoveries.length,
+        page: 1,
+        data: filteredDiscoveries,
+      };
     }
 
     const startIndex = (page - 1) * limit;
@@ -44,10 +50,10 @@ export class DiscoveryService {
     );
 
     return {
-      data: paginatedDiscoveries,
       total: filteredDiscoveries.length,
       page,
       limit,
+      data: paginatedDiscoveries,
     };
   }
 
