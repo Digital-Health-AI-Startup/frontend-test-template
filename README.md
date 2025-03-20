@@ -69,7 +69,7 @@ Once you create a UI where discoveries can be viewed, the “Acknowledged” lis
 Please make note of the following:
 
 1. The discoveries data already exists, and an endpoint already exists that will send back the list of discoveries. Neither the data nor the endpoint need to be updated in order for you to successfully complete the challenge, but you may modify the data or the endpoint should you choose to.
-2. Please use MUI to build the UI for this challenge. You can use MUI icons by importing them from `'react-icons/md'`.
+2. Please use [MUI](https://mui.com/) and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge.
 3. All packages you need to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge.
 4. We are not expecting you to do any work outside of building the interface for the base list and “Acknowledged” list, wiring up the “Submit” button, and completing the enhancement.
 5. None of the code that you submit will be used in any way in our actual codebase. This challenge is a generic challenge that does not represent any active work being done on our codebase.
@@ -166,3 +166,19 @@ pnpm run start:dev
 You should be able to see the app on `http://localhost:5173/` and the API documentation at `http://localhost:3000/api`.
 
 There's more information about how to run the [API](./apps/api/README.md) and [UI](./apps/web/README.md) in their respective directories.
+
+## Tech Stack
+
+### UI
+
+The following packages are included in the UI:
+
+- React
+- [MUI](https://mui.com/)
+- [react-icons](https://react-icons.github.io/react-icons/icons/md/)
+
+While you do not need to install any other dependencies to complete the challenge, you are more than welcome to pull in other packages if you would like to.
+
+### API
+
+- [Nest.js](https://nestjs.com/)
