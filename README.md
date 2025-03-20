@@ -20,9 +20,10 @@ Before you start coding, make sure you have the following installed on your mach
 
 When you are ready to start coding:
 
-1. Clone this repo
-2. Create your own branches on your new repo. Create one branch for the **base challenge**, and a second branch for the **enhancement**
-3. When you are ready to submit, open a PR (more detailed instructions below)
+1. Start by using this template. You can do so by clicking the "Use this template" button in the top right of the GitHub UI, then "Create a new repository". Make this new repo private.
+2. Read the details about the test below and complete the test.
+3. Invite the code review team to your repository and email us to let us know it's ready. If the list of GitHub users has not already been provided to you, work with your contact here to get that list.
+4. We will review your work and schedule a technical interview where you will meet some of our engineers and discuss this test.
 
 Once you’ve got the repo set up, use nvm to install and path the correct Node version based on the .nvmrc in this repo:
 
@@ -43,7 +44,7 @@ And then you can run both the API and web app together, concurrently, by running
 pnpm run start:dev
 ```
 
-You should be able to see the app on `http://localhost:5173/`.
+You should be able to see the app on `http://localhost:5173/` and the API documentation at `http://localhost:3000/api`.
 
 There's more information about how to run the [API](./apps/api/README.md) and [UI](./apps/web/README.md) in their respective directories.
 
