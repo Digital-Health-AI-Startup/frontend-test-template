@@ -45,6 +45,8 @@ pnpm run start:dev
 
 You should be able to see the app on `http://localhost:5173/`.
 
+There's more information about how to run the [API](./apps/api/README.md) and [UI](./apps/web/README.md) in their respective directories.
+
 ## Submitting the Test
 
 When you are ready to submit the challenge, please open two PRs. One PR should consist of your solution for the **base challenge**. The second PR should consist of your solution to the **enhancement** you’ve selected.
