@@ -1,4 +1,4 @@
-# Take Home Challenge Readme
+# Percipio Take Home Challenge
 
 ## Expectations
 
