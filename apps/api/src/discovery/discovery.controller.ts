@@ -8,18 +8,13 @@ import {
   Param,
   Query,
 } from '@nestjs/common';
-import {
-  ApiOperation,
-  ApiResponse,
-  ApiTags,
-  ApiQuery,
-  ApiParam,
-} from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags, ApiParam } from '@nestjs/swagger';
 import { DiscoveryService } from './discovery.service';
 import { Discovery } from './entities/discovery.entity';
 import { CreateDiscoveryDto } from './dto/create-discovery.dto';
 import { UpdateDiscoveryDto } from './dto/update-discovery.dto';
 import { PaginatedDiscoveriesDto } from './dto/paginated-discoveries.dto';
+import { DiscoveryStatusOption } from './enums/discovery-status.enum';
 
 @ApiTags('discoveries')
 @Controller('discoveries')
@@ -27,26 +22,21 @@ export class DiscoveryController {
   constructor(private readonly discoveryService: DiscoveryService) {}
 
   @Get()
-  @ApiOperation({ summary: 'Get all discoveries' })
-  @ApiResponse({ status: 200, description: 'Return all discoveries.' })
-  @ApiQuery({
-    name: 'page',
-    required: false,
-    type: Number,
-    description: 'Page number. Default is 1.',
+  @ApiOperation({
+    summary: 'Get all discoveries with pagination and optional status filter',
   })
-  @ApiQuery({
-    name: 'limit',
-    required: false,
-    type: Number,
+  @ApiResponse({
+    status: 200,
     description:
-      'Number of items per page. If not provided, returns all items.',
+      'Returns paginated discoveries and optionally filtered by status',
+    type: PaginatedDiscoveriesDto,
   })
   findAll(
     @Query('page') page?: number,
     @Query('limit') limit?: number,
+    @Query('status') status?: DiscoveryStatusOption,
   ): PaginatedDiscoveriesDto {
-    return this.discoveryService.findPaginated(page, limit);
+    return this.discoveryService.findAllPaginated(page, limit, status);
   }
 
   @Get(':id')

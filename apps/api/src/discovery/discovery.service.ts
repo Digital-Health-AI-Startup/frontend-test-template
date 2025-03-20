@@ -13,33 +13,41 @@ export class DiscoveryService {
   private discoveries: Discovery[] = [];
 
   constructor() {
-    try {
-      const dataPath = path.join(__dirname, '..', 'data', 'discoveries.json');
-      const rawData = fs.readFileSync(dataPath, 'utf8');
-      const data = JSON.parse(rawData);
-      this.discoveries = data.discoveries;
-    } catch (error) {
-      console.error('Error loading discoveries:', error);
-      this.discoveries = [];
-    }
+    this.loadDiscoveries();
   }
 
-  findPaginated(page: number = 1, limit?: number): PaginatedDiscoveriesDto {
-    if (!limit) {
-      return {
-        total: this.discoveries.length,
-        page: page,
-        data: this.discoveries,
-      };
+  private loadDiscoveries() {
+    const filePath = path.join(__dirname, '../data/discoveries.json');
+    const fileContent = fs.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(fileContent);
+    this.discoveries = data.discoveries;
+  }
+
+  findAllPaginated(
+    page: number = 1,
+    limit: number = 10,
+    status?: DiscoveryStatusOption,
+  ): PaginatedDiscoveriesDto {
+    let filteredDiscoveries = [...this.discoveries];
+
+    if (status) {
+      filteredDiscoveries = filteredDiscoveries.filter(
+        (discovery) => discovery.status === status,
+      );
     }
+
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
-    const paginatedData = this.discoveries.slice(startIndex, endIndex);
+    const paginatedDiscoveries = filteredDiscoveries.slice(
+      startIndex,
+      endIndex,
+    );
+
     return {
-      total: this.discoveries.length,
+      data: paginatedDiscoveries,
+      total: filteredDiscoveries.length,
       page,
       limit,
-      data: paginatedData,
     };
   }
 
