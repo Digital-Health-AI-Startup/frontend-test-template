@@ -8,7 +8,13 @@ import {
   Param,
   Query,
 } from '@nestjs/common';
-import { ApiOperation, ApiResponse, ApiTags, ApiParam } from '@nestjs/swagger';
+import {
+  ApiOperation,
+  ApiResponse,
+  ApiTags,
+  ApiParam,
+  ApiQuery,
+} from '@nestjs/swagger';
 import { DiscoveryService } from './discovery.service';
 import { Discovery } from './entities/discovery.entity';
 import { CreateDiscoveryDto } from './dto/create-discovery.dto';
@@ -22,6 +28,12 @@ export class DiscoveryController {
   constructor(private readonly discoveryService: DiscoveryService) {}
 
   @Get()
+  @ApiQuery({
+    name: 'page',
+    required: false,
+    type: Number,
+    description: 'Page number. Default is 1.',
+  })
   @ApiOperation({
     summary: 'Get all discoveries with pagination and optional status filter',
   })
