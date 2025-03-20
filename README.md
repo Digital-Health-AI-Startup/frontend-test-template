@@ -21,7 +21,7 @@ Before you start coding, make sure you have the following installed on your mach
 When you are ready to start coding:
 
 1. Clone this repo
-2. Create your own branches on your new repo. Create one branch for the base challenge, and a second branch for the enhancement
+2. Create your own branches on your new repo. Create one branch for the **base challenge**, and a second branch for the **enhancement**
 3. When you are ready to submit, open a PR (more detailed instructions below)
 
 Once you’ve got the repo set up, use nvm to install and path the correct Node version based on the .nvmrc in this repo:
@@ -37,11 +37,13 @@ Then, install packages from the monorepo root:
 pnpm i
 ```
 
-And then you can run both the API and web app together, concurrently, with the following script:
+And then you can run both the API and web app together, concurrently, by running the following script from the root directory:
 
 ```
 pnpm run start:dev
 ```
+
+You should be able to see the app on `http://localhost:5173/`.
 
 ## Submitting the Test
 
@@ -72,18 +74,22 @@ The “Acknowledged” list will signal to other clinicians that the discovery h
 
 Here are the asks we have for you:
 
-**Base Challenge, Part One: Build an interface where these discoveries can be viewed by a user.**
-As a user, I want to be able to see the full list of 100 discoveries. The list of discoveries should look like what’s in the mock (DESIGN LINK HERE) . The discoveries should be listed in reverse-chronological order (most recent first).
+**Base Challenge: Acceptance Criteria**
 
-**Base Challenge, Part Two: Create the Ability to “Acknowledge” Discoveries.**
-As a user, I want the ability to accept a single discovery, multiple discoveries, or all discoveries so that I can show that I have reviewed the discoveries that have been made for the patient.
-The user should be able to select one, multiple, or all discoveries.
-When a discovery is moved over to the “Acknowledged” list, a “Submit” button should appear.
-Clicking “Submit” should save the list of Acknowledged discoveries.
-After clicking “Submit,” the Acknowledged list should persist after a page refresh.
+1. As a user, I want to see the full list of 100 discoveries, displayed in reverse-chronological order (most recent first), and formatted according to the mock design (DESIGN LINK HERE).
+2. As a user, I want the ability to accept:
+   - A single discovery
+   - Multiple discoveries
+   - All discoveries  
+     so that I can indicate which discoveries have been reviewed for the patient.
+3. As a user, I should be able to select one, multiple, or all discoveries.
+4. When a discovery is moved to the “Acknowledged” list:
+   - A “Submit” button should appear.
+   - Clicking “Submit” should save the list of acknowledged discoveries.
+   - The acknowledged discoveries list should persist after a page refresh.
 
-**Enhancement: Select a Single Enhancement from the list of “Enhancements” to complete.**
-While you may choose to complete multiple tasks from the list, you will only be assessed for completing one of them. So if you complete three of the tasks, we will only assess you for one of the three. When you submit your assessment you can select which Enhancement you would like us to assess.
+**Enhancement: Acceptance Criteria.**
+Please select one Enhancement from the list of Enhancements below to complete. In your PR, please state which Enhancement you selected.
 
 **Notes:**
 Once you create a UI where discoveries can be viewed, the “Acknowledged” list, and one enhancement, the take home challenge is considered complete and can be submitted.
@@ -101,37 +107,37 @@ Please select only one of the following tasks to complete.
 
 ### #1: Implement infinite scroll with lazy loading
 
-100 discoveries is a lot of data to render, and it may overwhelm the user to see so much data all at once! To make the experience of viewing discoveries less overwhelming for our users, implement infinite scroll with lazy loading so that the user only sees a set amount of discoveries at once, and the user can scroll to see the next batch of data.
-
-You are welcome to choose how much data to show initially, and how much data to fetch as the user scrolls.
+As a user, I should initially see a list of 25 discoveries. As I scroll, more discoveries should be loaded into the screen.
 
 ### #2: Implement Pagination
 
-Similarly, pagination is another strategy for showing large amounts of data. To prevent overwhelming our users with a lot of discoveries, implement pagination so that our users only sees a set amount of discoveries at a time.
+As a user, I should initially see a list of 25 discoveries. There should page numbers at the bottom of the container. Clicking on a page number should show that set of discoveries. Each page should show a maximum of 25 discoveries.
 
 ### #3: Create a batch update endpoint
 
-Currently, discoveries can only be updated one at a time. This is inefficient, given that we will usually be updating multiple discoveries at the same time. Create a new batch update endpoint that takes in a list of discoveries and updates them in one go. Wire up the UI to use the new batch update endpoint.
+As a user, I want the ability to update multiple discoveries at once through a batch update feature so that I can save time and avoid the inefficiency of updating discoveries one at a time. The UI should be wired to use the new batch update endpoint for seamless functionality.
 
 ### #4: Create a summary of the discoveries list
 
-Each discovery provides an insight into the patient’s health, and in this assessment 100 discoveries are provided. For this enhancement, generate a brief summary of 2-4 sentences that highlights general health trends for the patient that is based on the discoveries in the Acknowledged list. Display this summary above the list of discoveries.
+As a user, I want a brief summary of 2-4 sentences highlighting general health trends based on the discoveries in the Acknowledged list so that I can quickly understand key insights about the patient’s health. This summary should be displayed above the list of discoveries. You are welcome to use AI or other tools not included in this repo to accomplish this task.
 
-Here’s an example of what a summary could look like for a patient that has multiple discoveries related to elevated blood pressure levels and high resting heart rate:
+An example of a summary could be:
 
+```
 “The patient has an elevated blood pressure of 160/90mmHg. Additionally, the patient’s Pulse Rate is 59, deviating -5.1% from the historical average of 62.2.”
-
-You are welcome to use AI or other tools not included in this repo to generate the summary.
+```
 
 ### #5: Add some animations/transitions on the lists
 
-Add some animations, transitions, or other CSS effects that makes the experience of working with the lists more fluid and enjoyable.
+As a user, I want animations, transitions, or other CSS effects added to the lists so that the experience feels more fluid and enjoyable.
 
 ### #6: Add Dark Mode and the ability to toggle between Light and Dark Mode
 
+As a user, I should be able to toggle between Light and Dark mode.
+
 ### #7: Add test coverage
 
-Whether it be UI test coverage, e2e tests, add any tests you feel would ensure your submission works as expected.
+As a developer, I want to add UI test coverage, e2e tests, or any other necessary tests so that I can ensure my submission works as expected.
 
 ### #8: Have something else in mind you’d like to do?
 
@@ -145,7 +151,7 @@ If you don’t like any of the tasks in the list above, feel free to come up wit
 ## To submit the challenge:
 
 1. Clone the repo
-2. Create two branches - one for building out your solution to the base challenge, and a second for your solution for the enhancement you’ve selected
+2. Create two branches - one for building out your solution to the **base challenge**, and a second for your solution for the **enhancement** you’ve selected
 3. When you are ready to submit, open two PRs
 
 In the PR description, please include:
