@@ -29,8 +29,19 @@ export class DiscoveryController {
   @Get()
   @ApiOperation({ summary: 'Get all discoveries' })
   @ApiResponse({ status: 200, description: 'Return all discoveries.' })
-  @ApiQuery({ name: 'page', required: false, type: Number })
-  @ApiQuery({ name: 'limit', required: false, type: Number })
+  @ApiQuery({
+    name: 'page',
+    required: false,
+    type: Number,
+    description: 'Page number. Default is 1.',
+  })
+  @ApiQuery({
+    name: 'limit',
+    required: false,
+    type: Number,
+    description:
+      'Number of items per page. If not provided, returns all items.',
+  })
   findAll(
     @Query('page') page?: number,
     @Query('limit') limit?: number,
