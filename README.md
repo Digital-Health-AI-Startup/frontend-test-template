@@ -70,7 +70,7 @@ Please make note of the following:
 
 1. The discoveries data already exists, and an endpoint already exists that will send back the list of discoveries. Neither the data nor the endpoint need to be updated in order for you to successfully complete the challenge, but you may modify the data or the endpoint should you choose to.
 2. Please use [MUI](https://mui.com/) and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge.
-3. All packages you need to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge.
+3. All packages you need to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge, but you are welcome to install and use other dependencies if you would like to.
 4. We are not expecting you to do any work outside of building the interface for the base list and “Acknowledged” list, wiring up the “Submit” button, and completing the enhancement.
 5. None of the code that you submit will be used in any way in our actual codebase. This challenge is a generic challenge that does not represent any active work being done on our codebase.
 
