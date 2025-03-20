@@ -58,7 +58,7 @@
       "categories": ["nutrition", "diet"],
       "severity": "medium",
       "createdAt": "2024-03-15T16:30:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440006",
@@ -128,7 +128,7 @@
       "categories": ["medication", "adherence"],
       "severity": "low",
       "createdAt": "2024-03-08T15:40:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440013",
@@ -198,7 +198,7 @@
       "categories": ["sleep", "wellness"],
       "severity": "low",
       "createdAt": "2024-03-01T14:20:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440020",
@@ -308,7 +308,7 @@
       "categories": ["activity", "fitness"],
       "severity": "low",
       "createdAt": "2024-02-19T14:20:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440031",
@@ -408,7 +408,7 @@
       "categories": ["sleep", "wellness"],
       "severity": "low",
       "createdAt": "2024-02-09T16:30:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440041",
@@ -558,7 +558,7 @@
       "categories": ["sleep", "wellness"],
       "severity": "low",
       "createdAt": "2024-01-25T16:30:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440056",
@@ -608,7 +608,7 @@
       "categories": ["activity", "fitness"],
       "severity": "low",
       "createdAt": "2024-01-20T14:20:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440061",
@@ -648,7 +648,7 @@
       "categories": ["sleep", "environment"],
       "severity": "low",
       "createdAt": "2024-01-16T14:30:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440065",
@@ -708,7 +708,7 @@
       "categories": ["sleep", "wellness"],
       "severity": "low",
       "createdAt": "2024-01-19T11:30:00Z",
-      "status": "dismissed"
+      "status": "active"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440096",
