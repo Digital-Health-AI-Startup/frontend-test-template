@@ -34,6 +34,19 @@ export class DiscoveryController {
     type: Number,
     description: 'Page number. Default is 1.',
   })
+  @ApiQuery({
+    name: 'limit',
+    required: false,
+    type: Number,
+    description:
+      'Limit number of discoveries per page. Default will return all discoveries.',
+  })
+  @ApiQuery({
+    name: 'status',
+    required: false,
+    type: String,
+    description: 'Status filter. Default will return all discoveries.',
+  })
   @ApiOperation({
     summary: 'Get all discoveries with pagination and optional status filter',
   })
