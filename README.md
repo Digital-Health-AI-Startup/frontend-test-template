@@ -51,7 +51,7 @@ Here are the asks we have for you:
 
 1. As a user, I want to see the full list of 100 discoveries, displayed in reverse-chronological order (most recent first).
    - Please use the included mocks as a guideline - however, we don't expect exact, pixel-perfect replication of the mock!
-   - If you plan to use icons in your submission, we suggest using the following icons and colors:
+   - We suggest using the following icons and colors:
      1. Discoveries of `type` `physiology` can use the icon `<MdFavoriteBorder />` set to color `primaryMain`
      2. Discoveries of `type` `brain` can use the icon `<LuBrain />` set to color `errorLight`
      3. Discoveries of `type` `medication` can use the icon `<LuPill />` set to color `successMain`
