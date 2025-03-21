@@ -586,7 +586,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440091",
+      "id": "550e8400-e29b-41d4-a716-446155440092",
       "type": "physiology",
       "title": "Electrolyte Balance",
       "body": "Minor electrolyte imbalance detected",
@@ -604,7 +604,7 @@
       "status": "acknowledged"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440093",
+      "id": "550e8400-e29b-41d4-a716-446655441093",
       "type": "brain",
       "title": "Memory Pattern Change",
       "body": "Recent changes in short-term memory function",
@@ -631,7 +631,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440096",
+      "id": "550e8400-e29b-41d4-a716-441655440096",
       "type": "physiology",
       "title": "Magnesium Level Change",
       "body": "Decreased magnesium levels in recent test",
@@ -649,7 +649,7 @@
       "status": "acknowledged"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440098",
+      "id": "550e8401-e29b-41d4-a716-446655440098",
       "type": "medication",
       "title": "Medication Effectiveness",
       "body": "Reduced effectiveness of current medication",
@@ -811,7 +811,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440092",
+      "id": "550e8400-e29b-41d4-a716-446655441092",
       "type": "brain",
       "title": "Mood Pattern",
       "body": "Increased mood fluctuations noted",
@@ -829,7 +829,7 @@
       "status": "acknowledged"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440094",
+      "id": "550e8400-e29b-41d4-a716-446655441094",
       "type": "physiology",
       "title": "Iron Levels",
       "body": "Iron levels approaching lower threshold",
@@ -838,7 +838,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440095",
+      "id": "550e8400-e29b-41d4-a716-446655440195",
       "type": "physiology",
       "title": "Heart Rhythm Pattern",
       "body": "Minor irregularities in heart rhythm",
@@ -856,7 +856,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440097",
+      "id": "550e8410-e29b-41d4-a716-446655440097",
       "type": "physiology",
       "title": "Omega-3 Intake",
       "body": "Insufficient omega-3 fatty acid consumption",
@@ -874,7 +874,7 @@
       "status": "active"
     },
     {
-      "id": "550e8400-e29b-41d4-a716-446655440099",
+      "id": "540e8400-e29b-41d4-a716-446655440099",
       "type": "medication",
       "title": "Medication Interaction",
       "body": "Potential interaction between medications detected",
