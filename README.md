@@ -66,8 +66,10 @@ Here are the asks we have for you:
    - Clicking “Submit” should save the list of acknowledged discoveries.
    - The acknowledged discoveries list should persist after a page refresh.
 
+Once you have completed all the requirements above, open a PR with your submission.
+
 **Enhancement: Acceptance Criteria.**
-Please select one Enhancement from the list of Enhancements below to complete. In your PR, please state which Enhancement you selected.
+Please select one Enhancement from the list of Enhancements below to complete. Once you have selected an Enhancement, create a new branch. This new branch will contain your solution for your selected enhancement. In your PR, please state which Enhancement you selected.
 
 **Notes:**
 Once you create a UI where discoveries can be viewed, the “Acknowledged” list, and one enhancement, the take home challenge is considered complete and can be submitted.
@@ -117,7 +119,11 @@ As a user, I should be able to toggle between Light and Dark mode.
 
 As a developer, I want to add UI test coverage, e2e tests, or any other necessary tests so that I can ensure my submission works as expected.
 
-### #8: Have something else in mind you’d like to do?
+### #8: Add ability to "unselect" an acknowledged discovery.
+
+As a user, I would like the ability to move a discovery in the "acknowledged" list back to the base list.
+
+### #9: Have something else in mind you’d like to do?
 
 If you don’t like any of the tasks in the list above, feel free to come up with something on your own! If you choose to complete your own task, please bear in mind the following:
 
@@ -128,11 +134,11 @@ If you don’t like any of the tasks in the list above, feel free to come up wit
 
 ## To submit the challenge:
 
-1. Clone the repo
+1. Click the "Use this template" button in the top right of the GitHub UI, then "Create a new repository". Make this new repo private.
 2. Create two branches - one for building out your solution to the **base challenge**, and a second for your solution for the **enhancement** you’ve selected
-3. When you are ready to submit, open two PRs
+3. When you are ready to submit, open two PRs. The Two PRs do not have to be opened at the same time.
 
-In the PR description, please include:
+In the PR descriptions, please include:
 
 1. Which enhancement you completed/which one you would like us to focus on
 2. If you chose to complete your own custom task, please elaborate here on what you accomplished and why you chose
