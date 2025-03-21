@@ -52,9 +52,9 @@ Here are the asks we have for you:
 1. As a user, I want to see the full list of 100 discoveries, displayed in reverse-chronological order (most recent first).
    - We've included screenshots to give you an idea of what we're expecting, but we do not expect your submission to resemble the screenshots exactly. Feel free to reference the screenshot as much or as little as you would like!
    - If you plan to use icons in your submission, we suggest using the following icons and colors. You are welcome to use other icons and colors of your choosing if you prefer!
-     1. Discoveries of `category` `physiology` can use the icon `<MdFavoriteBorder />` set to color `primaryMain`
-     2. Discoveries of `category` `brain` can use the icon `<LuBrain />` set to color `errorLight`
-     3. Discoveries of `category` `medication` can use the icon `<LuPill />` set to color `successMain`
+     1. Discoveries of `type` `physiology` can use the icon `<MdFavoriteBorder />` set to color `primaryMain`
+     2. Discoveries of `type` `brain` can use the icon `<LuBrain />` set to color `errorLight`
+     3. Discoveries of `type` `medication` can use the icon `<LuPill />` set to color `successMain`
 2. As a user, I want the ability to accept:
    - A single discovery
    - Multiple discoveries
