@@ -14,7 +14,7 @@ Please make note of the following expectations before you begin coding:
 
 1. Start by using this template. You can do so by clicking the "Use this template" button in the top right of the GitHub UI, then "Create a new repository". Make this new repo private.
 2. Read the details about the test below and complete the test in two separate branches. One branch should contain your solution for the base challenge. The second should contain your solution for the enhancement.
-3. When you are ready to submit, open two PRs - one for the base challenge, the second for the enhancement.
+3. When you are ready to submit, open two PRs - one for the base challenge, the second for the enhancement. The PRs do not have to be opened at the same time.
 4. Invite the code review team to your repository and email us to let us know it's ready. If the list of GitHub users has not already been provided to you, work with your contact here to get that list.
 5. We will review your work and schedule a technical interview where you will meet some of our engineers and discuss this test.
 
@@ -49,7 +49,12 @@ Here are the asks we have for you:
 
 **Base Challenge: Acceptance Criteria**
 
-1. As a user, I want to see the full list of 100 discoveries, displayed in reverse-chronological order (most recent first), and formatted according to the mock design (DESIGN LINK HERE).
+1. As a user, I want to see the full list of 100 discoveries, displayed in reverse-chronological order (most recent first).
+   - We've included screenshots to give you an idea of what we're expecting, but we do not expect your submission to resemble the screenshots exactly. Feel free to reference the screenshot as much or as little as you would like!
+   - If you plan to use icons in your submission, we suggest using the following icons and colors. You are welcome to use other icons and colors of your choosing if you prefer!
+     1. Discoveries of `category` `physiology` can use the icon `<MdFavoriteBorder />` set to color `primaryMain`
+     2. Discoveries of `category` `brain` can use the icon `<LuBrain />` set to color `errorLight`
+     3. Discoveries of `category` `medication` can use the icon `<LuPill />` set to color `successMain`
 2. As a user, I want the ability to accept:
    - A single discovery
    - Multiple discoveries
@@ -69,7 +74,7 @@ Once you create a UI where discoveries can be viewed, the “Acknowledged” lis
 Please make note of the following:
 
 1. The discoveries data already exists, and an endpoint already exists that will send back the list of discoveries. Neither the data nor the endpoint need to be updated in order for you to successfully complete the challenge, but you may modify the data or the endpoint should you choose to.
-2. Please use [MUI](https://mui.com/) and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge.
+2. Please use [MUI](https://mui.com/) and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge. We recommend you use the icons: `MdFavoriteBorder`, `LuPill`, and `LuBrain`
 3. All packages you need to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge, but you are welcome to install and use other dependencies if you would like to.
 4. We are not expecting you to do any work outside of building the interface for the base list and “Acknowledged” list, wiring up the “Submit” button, and completing the enhancement.
 5. None of the code that you submit will be used in any way in our actual codebase. This challenge is a generic challenge that does not represent any active work being done on our codebase.
