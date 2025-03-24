@@ -28,10 +28,7 @@ In both of your PR descriptions, please include:
 2. A brief description of your submission.
 3. Anything else you might like us to know as we review your submission.
 
-In the PR description for your enhancement, please also include:
-
-1. Which enhancement you completed.
-2. If you chose to complete your own custom task, please elaborate here on what you accomplished and why you chose that task.
+In the PR description for your enhancement, please state which enhancement you completed. If you completed more than one, please specify which one you would like us to focus on.
 
 ## The Test
 
@@ -65,7 +62,6 @@ Here are the asks we have for you:
 <img src="doc/1_default.png" width="32%">
 <img src="doc/2_selected.png" width="32%">
 <img src="doc/3_acknowledged.png" width="32%">
-
 
 ### 2. Enhancement
 
@@ -122,7 +118,7 @@ Please make note of the following:
 2. Please use [MUI](https://mui.com/) components and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge.
 3. All packages needed to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge, but you are welcome to install and use other dependencies if you would like to.
 4. We are not expecting you to do any work outside of building the interface for the “Active” and “Acknowledged” lists, wiring up the “Submit” button, and completing one enhancement.
-5. None of the code that you submit will be used in any way in our actual codebase -  but this challenge is representative of the _type_ of work you may be asked to do day-to-day.
+5. None of the code that you submit will be used in any way in our actual codebase - but this challenge is representative of the _type_ of work you may be asked to do day-to-day.
 
 ## Getting Started
 
