@@ -101,15 +101,6 @@ As a user, I should be able to toggle between Light and Dark mode.
 
 As a developer, I want to add UI test coverage, e2e tests, or any other necessary tests so that I can ensure my submission works as expected.
 
-#### #8: Custom task
-
-Have something else in mind you’d like to do? We'd love to see it! If you choose to complete your own task, please bear in mind the following:
-
-- Use the tasks listed above as a general idea of the complexity we’re looking for, and keep in mind that we expect the entire challenge to take no longer than 4 hours.
-- Our users consist of hardworking clinicians who want to provide the best possible care for their patients. The task you choose to do should be something that enables clinicians to better use the system so that they can focus on doing what they’re good at!
-- While this is a frontend-focused challenge, if you’d like to flex your API muscles you would be more than welcome to do so.
-- If you have any questions or concerns about your idea, feel free to reach out!
-
 ## Additional Notes:
 
 Please make note of the following:
