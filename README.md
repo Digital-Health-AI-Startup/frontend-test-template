@@ -28,7 +28,7 @@ In both of your PR descriptions, please include:
 2. A brief description of your submission.
 3. Anything else you might like us to know as we review your submission.
 
-In the PR description for your enhancement, please state which enhancement you completed. If you completed more than one, please specify which one you would like us to focus on.
+In the PR description for your enhancement, please state which enhancement you completed.
 
 ## The Test
 
