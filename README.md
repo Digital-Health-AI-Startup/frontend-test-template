@@ -1,12 +1,12 @@
-# Percipio Take Home Challenge
+# Percipio Front End Take Home Challenge
 
 ## Expectations
 
 Please make note of the following expectations before you begin:
 
-1. **This challenge consists of two pieces - (1) the base challenge, and (2) the enhancement**. We expect you to complete the base challenge and only one of the enhancements from the list further down this readme.
+1. **This challenge consists of two pieces - (1) the base challenge, and (2) the enhancement**. We expect you to complete the base challenge and _only one_ of the enhancements from the list further down this readme.
 2. **We will only assess you for the code you submit that completes the base challenge and one enhancement**. Please indicate in your submission which enhancement you completed.
-3. **We expect you to spend ~2-4 hours on this challenge**. If you’re unable to complete all the requirements in that time frame, feel free to explain in your write-up any of the thoughts or plans you would have completed with more time.
+3. **We expect you to spend ~2-4 hours on this challenge in total**. This is not a hard limit, but is meant to set expectations about how much work we are asking of you. If you’re unable to complete all the requirements in that time frame, feel free to explain in your write-up any of the thoughts or plans you would have completed with more time.
 4. **We do not expect a full scale application with working navigation, complex animations, etc. You should only develop what you need in order to accomplish the goal we've given.**
 5. The purpose of this challenge is to get a sense of your work, and to serve as the focal point of your technical interview. Expect the code you submit to come up in your technical interview.
 
@@ -14,13 +14,14 @@ Please make note of the following expectations before you begin:
 
 1. Start by using this template. You can do so by clicking the "Use this template" button in the top right of the GitHub UI, then "Create a new repository". Make this new repo private.
 2. Read the details about the test below and complete the test.
-3. When you are ready to submit, open two PRs as outlined below.
-4. Invite the code review team to your repository and email us to let us know it's ready. If the list of GitHub users has not already been provided to you, work with your contact here to get that list.
-5. We will review your work and schedule a technical interview where you will meet some of our engineers and discuss this test.
+3. Create a branch to complete the base challenge. When you are ready to do the enhancement, create a new branch off of your base challenge branch.
+4. When you are ready to submit, open two PRs as outlined below.
+5. Send an email to the person that sent you this challenge and they will coordinate with you to determine what list of reviewers to invite to your repository.
+6. We will review your work. If you are chosen to progress, we will schedule a technical interview where you will meet some of our engineers and discuss this test.
 
 ### Submitting the Test
 
-When you are ready to submit the challenge, please open two PRs. One PR should consist of your solution for the **base challenge**. The second PR should consist of your solution to the **enhancement** you’ve selected.
+When you are ready to submit the challenge, please open two PRs within your copy of the repository. One PR should consist of your solution for the **base challenge**. The second PR should consist of your solution to the **enhancement** you’ve selected, which should be a PR into your base challenge branch.
 
 In both of your PR descriptions, please include:
 
@@ -105,7 +106,7 @@ As a developer, I want to add UI test coverage, e2e tests, or any other necessar
 
 Please make note of the following:
 
-1. The API provides various endpoints to interact with Discoveries data. Neither the data nor the endpoints need to be updated to successfully complete the challenge, but you may modify them should you choose to.
+1. The API provides various endpoints to interact with Discoveries data. Neither the data nor the endpoints need to be updated to successfully complete the base challenge.
 2. Please use [MUI](https://mui.com/) components and [react-icons](https://react-icons.github.io/react-icons/icons/md/) to build the UI for this challenge.
 3. All packages needed to complete the **base challenge** are included in the package.json. You should not need to install any new dependencies to complete the base challenge, but you are welcome to install and use other dependencies if you would like to.
 4. We are not expecting you to do any work outside of building the interface for the “Active” and “Acknowledged” lists, wiring up the “Submit” button, and completing one enhancement.
